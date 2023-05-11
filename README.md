@@ -7,7 +7,7 @@ Enabling mouse gestures.
 ### Download software
 
 ```sh
-sudo apt install cmake libevdev-dev libudev-dev libconfig++-dev
+sudo apt install cmake libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
 git clone https://github.com/PixlOne/logiops.git
 cd logiops
 mkdir build
@@ -15,7 +15,7 @@ cd build
 cmake ..
 make
 sudo make install
-sudo cat logid.cfg > /etc/logid.cfg
+cat logid.cfg | echo /etc/logid.cfg
 sudo systemctl enable --now logid
 ```
 
