@@ -15,6 +15,7 @@ cd build
 cmake ..
 make
 sudo make install
+sudo cat logid.cfg > /etc/logid.cfg
 sudo systemctl enable --now logid
 ```
 
